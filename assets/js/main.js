@@ -7,6 +7,18 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
 */
 
 // Chiedere il numero di km da pecorrere
+const kmTraveled = prompt("How many km do you want to travel?");
+const yourAge = prompt("How old are you?");
+
+// impostare i limiti della variabile "kmTraveled" - nessuna stringa e nessun numero minore di 0
+if (kmTraveled < 0 || isNaN(kmTraveled)) {
+    alert("Choice not available");
+}
+
+// impostare i limiti della variabile "yourAge" - nessuna stringa e nessun numero minore di 0
+if (yourAge < 0 || isNaN(yourAge)) {
+    alert("Choice not available");
+}
 
 // Chiedere l'età del passeggero
 
