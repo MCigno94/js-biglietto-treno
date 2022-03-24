@@ -35,17 +35,17 @@ if (yourAge < 18) {
     const ticketPrice = kmPrice * 0.8;
     // stampare il costo del biglietto
     console.log("The cost of the ticket is: " + ticketPrice.toFixed(2) + "€");
-    document.getElementById("ticket_price").innerHTML = "The cost of the ticket is : " + ticketPrice.toFixed(2) + "€";
+    document.getElementById("ticket_price").innerHTML = ticketPrice.toFixed(2) + "€";
 } else if (yourAge >= 65) {
     // applico uno sconto del 40%
     const ticketPrice = kmPrice * 0.6;
     // stampare il costo del biglietto
     console.log("The cost of the ticket is: " + ticketPrice.toFixed(2) + "€");
-    document.getElementById("ticket_price").innerHTML = "The cost of the ticket is : " + ticketPrice.toFixed(2) + "€";
+    document.getElementById("ticket_price").innerHTML = ticketPrice.toFixed(2) + "€";
 
 } else {
     // stampare il costo del biglietto senza sconti
     console.log("The cost of the ticket is: " + kmPrice.toFixed(2) + "€");
-    document.getElementById("ticket_price").innerHTML = "The cost of the ticket is : " + kmPrice.toFixed(2) + "€";
+    document.getElementById("ticket_price").innerHTML = kmPrice.toFixed(2) + "€";
 
 }
